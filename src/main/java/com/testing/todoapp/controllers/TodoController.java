@@ -12,11 +12,9 @@ import java.util.List;
 @RestController
 public class TodoController {
     private final TodoService todoService;
-    private final TodoRepository todoRepository;
 
     public TodoController(TodoService todoService, TodoRepository todoRepository) {
         this.todoService = todoService;
-        this.todoRepository = todoRepository;
     }
 
     @GetMapping("/all")
